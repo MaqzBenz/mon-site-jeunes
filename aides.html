@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendrier d'Événements</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/fullcalendar@5.11.0/main.min.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="nav-container">
+            <img src="image.png" alt="Hauts-de-Seine Logo" class="logo">
+            <nav>
+                <a href="index.html">Accueil</a>
+                <a href="calendrier.html">Calendrier d'événements</a>
+                <a href="activites.html">Activités à venir</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="calendar">
+            <h2>Calendrier des Événements</h2>
+            <p>Sélectionnez une date pour voir les événements et les détails.</p>
+            <div id="calendar"></div>
+        </section>
+    </main>
+
+    <!-- Modale pour afficher les détails de l'événement -->
+    <div id="eventModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h3 id="eventTitle">Titre de l'événement</h3>
+            <p id="eventDescription">Description de l'événement</p>
+            <p><strong>Lieu :</strong> <span id="eventLocation"></span></p>
+            <p><strong>Heure :</strong> <span id="eventTime"></span></p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Site Jeunes Hauts-de-Seine. Tous droits réservés.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/fullcalendar@5.11.0/main.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
